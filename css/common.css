@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+::selection {
+    background: #333333;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #333333;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #666;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #222;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    width: 16px;
+    height: 16px;
+    background: #666;
+}
+
+body {
+    min-width: 1400px;
+    margin: 0;
+    font-family: 'Gothic A1', 'Noto Sans KR', Arial, Helvetica, sans-serif;
+    overFlow-x: hidden;
+    overFlow-y: scroll;
+    letter-spacing: 1px;
+}
+
+.text-border {
+    text-shadow: 0 0 2px #444;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+/*header*/
+.gnb-wrap {
+    border-bottom: 1px solid #ddd;
+    box-shadow: 2px 2px 2px #ddd;
+}
+
+header {
+    min-width: 1100px;
+    width: 100%;
+    height: 100px;
+    background: #fff;
+}
+
+.navbar-header .navbar-brand-desktop {
+    float: left;
+    width: 20%;
+    padding-top: 30px;
+}
+
+.navbar-header .logo-image-desktop {
+    transition: 0.4s;
+    height: 40px;
+}
+
+/* Common styles for all menus */
+.menu {}
+
+.menu__list {
+    position: relative;
+    float: left;
+    width: 70%;
+    list-style: none;
+    text-align: right;
+}
+
+.menu__item {
+    display: block;
+    margin: 30px 0;
+    display: inline-block;
+}
+
+.menu__link {
+    font-size: 14px;
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+    outline: none;
+}
+
+/* Shylock (by @benhanks040888) */
+.menu--shylock .menu__link {
+    position: relative;
+    margin: 0 1em;
+    padding-right: 0;
+    padding-left: 0;
+    color: #333;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.menu--shylock .menu__item--current .menu__link,
+.menu--shylock .menu__item--current .menu__link:hover,
+.menu--shylock .menu__item--current .menu__link:focus {
+    color: #1ea5e1;
+}
+
+.menu--shylock .menu__item--current .menu__link::after,
+.menu--shylock .menu__item--current .menu__link::before {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+.menu--shylock .menu__item--current .menu__link::before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.menu--shylock .menu__link:hover,
+.menu--shylock .menu__link:focus {
+    color: #1ea5e1;
+}
+
+.menu--shylock .menu__link:hover::before,
+.menu--shylock .menu__link:focus::before {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.menu--shylock .menu__link::before,
+.menu--shylock .menu__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    -webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.sns {
+    float: right;
+    width: 7%;
+    vertical-align: top;
+    margin-top: 40px;
+    /*    margin-right: 20%;*/
+}
+
+.sns a i {
+    font-size: 18px;
+    padding: 0 5px;
+    /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}
+
+.sns a:first-child i {
+    color: #425E9B;
+}
+
+.sns a:last-child i {
+    color: #1DA1F2;
+}
+
+/*section*/
+/*visual*/
+.main-visual {
+    height: 400px;
+    background: url("../img/meeting-room-730679.jpg") no-repeat center;
+    background-size: auto;
+}
+
+h1.main-title p:first-child {
+    font-size: 30px;
+    font-weight: ;
+    color: #fff;
+}
+
+h1.main-title p:nth-child(2) {
+    font-size: 65px;
+    color: ;
+}
+
+.main-title p {
+    margin-left: 3%;
+}
+
+.main-title p:first-child {
+    margin-top: 85px;
+    color: ;
+}
+
+.main-title p:last-child {
+    margin-bottom: 2%;
+}
+
+.main-title span {
+    color: #D55966;
+    vertical-align: middle;
+}
+
+.main-title p {
+    width: 100%;
+    float: left;
+    color: $tertiary-color;
+    animation-name: titleAnimation;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+}
+
+h1.main-title p {
+    animation-delay: 0.6s;
+}
+
+@keyframes titleAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    }
+
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+}
+
+.main-info {
+    width: 70%;
+}
+
+.main-info p {
+    line-height: 26px;
+    margin-left: 5%;
+}
+
+.info-button {
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+
+.info-button a {
+    color: #0140D3;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 13px 60px;
+    display: inline-block;
+}
+
+.info-button a:hover {
+    background: #0140D3;
+    color: #fff;
+    transition: 1s;
+}
+
+.main-content {
+    margin-left: 0;
+    margin-bottom: 2%;
+}
+
+/*works*/
+.works {}
+
+.works p.works-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.line-row {
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.works p.works-content {
+    font-size: 20px;
+    margin-left: 3%;
+    margin-top: 5px;
+    margin-bottom: 1%;
+}
+
+.work-button {
+    margin-top: 1%;
+    text-align: center;
+}
+
+.work-button a {
+    color: #fff;
+    background: #222;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 13px 80px;
+    display: inline-block;
+}
+
+.work-button a:hover {
+    background: #0140D3;
+    color: #fff;
+    transition: 1s;
+}
+
+.container {
+    position: relative;
+    width: 33%;
+    display: inline-block;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*contact*/
+.contact {
+    height: 300px;
+    background: url("../img/pc-1207886.jpg") no-repeat center;
+    background-size: auto;
+}
+
+.contact h2 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact p {
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 30px;
+}
+
+/*footer*/
+footer {
+    border-top: 1px solid #999;
+    position: relative;
+    background: #2D3032''
+}
+
+.footer-brand-desktop {
+    display: inline-block;
+    width: 10%;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.logo-image-footer {
+    /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+.copyright {
+    padding: 20px 5%;
+    display: inline-block;
+}
+
+.copyright span {
+    margin: 5px 15px;
+    display: inline-block;
+}
+
+/*탑버튼*/
+.top {
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+}
+
+#myBtn {
+    font-size: 18px;
+    border: none;
+    background-color: #444;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 1px 3px 0px #ddd;
+    opacity: 1;
+}
+
+#myBtn i {
+    font-size: 40px;
+    padding: 0 10px;
+    color: white;
+}
+
+#myBtn p {
+    color: white;
+    font-size: 16px;
+}

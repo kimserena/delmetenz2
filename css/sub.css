@@ -1,0 +1,237 @@
+/*.line{border:2px solid #7dbe4b; width: 50px; margin: 50px auto;}*/
+/*
+.line {
+    border-top: 1px solid #000;
+    width: 100px;
+    margin: 50px auto;
+}
+*/
+
+/*sub*/
+p.subs-title {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #777;
+}
+
+.sub-content {
+    margin-bottom: 3%;
+}
+
+/*about*/
+.about-content h1 {
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.bigtext {}
+
+.gray {
+    color: #848484;
+}
+
+.bigtext p {
+    font-size: 25px;
+}
+
+.moto-info {
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.moto-info p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.moto-info p span:first-child {
+    color: #cc3444;
+}
+
+.moto-info p span:nth-child(2) {
+    color: #ffd22d;
+}
+
+.moto-info p span:nth-child(3) {
+    color: #1ea5e1;
+}
+
+p.about-info {
+    line-height: 30px;
+}
+
+.about-visual {
+    background: url('../img/conference-room-768441.jpg') no-repeat center;
+    height: 300px;
+}
+
+.ci-info {}
+
+.ci-info p {
+    line-height: 30px;
+}
+
+.ci-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+
+.ci-logo img {
+    height: 100px;
+}
+
+.ci-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.weare-visual {
+    
+}
+
+.weare-visual img {
+}
+
+.weare-visual .overlay {
+    cursor: default;
+}
+
+.one_third {
+    display: inline-block;
+    width: 30%;
+    margin-right: 1%;
+    box-sizing: border-box;
+    line-height: 30px;
+    letter-spacing: 1px;
+    vertical-align: top;
+}
+
+.one_third h2 {
+    margin: 10px 0;
+}
+
+/*works*/
+
+.works-visual {
+    background: url('../img/computer-2982270.jpg') no-repeat center;
+    background-size: 100%;
+    height: 300px;
+}
+
+.works {}
+
+ul.tabs {
+    margin-bottom: 1%;
+    list-style: none;
+}
+
+ul.tabs li:last-child::after {
+    border: none;
+}
+
+ul.tabs i {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+ul.tabs img {
+    height: 30px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+ul.tabs li {
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+ul.tabs li:first-child {}
+
+ul.tabs li.current {
+    color: #fff;
+    background: #222;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.current {
+    display: inherit;
+}
+
+/*#more {display: none;}*/
+
+/*request*/
+.requestbg {
+    height: 300px;
+    background: url("../img/building-1210022.jpg") no-repeat center;
+}
+
+.requestbg p{
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.requestbg p i{color:#fff;}
+
+.requestbg h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 0 2px #444;
+}
+
+.sub-content form input[type=text],
+.sub-content form input[type=email] {
+    border: 1px solid #000;
+    padding: 20px;
+    display: inline-block;
+    width: 49.5%;
+    margin: 10px 0;
+
+}
+
+.sub-content form textarea {
+    border: 1px solid #000;
+    padding: 10px;
+    display: block;
+    margin: 10px 0;
+    width: 99.5%;
+    height: 200px;
+}
+
+.submit-center {
+    text-align: center;
+}
+
+.sub-content form input[type=submit] {
+    color: #fff;
+    background: #222;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 20px 120px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sub-content form input[type=submit]:hover {
+    background: #0140D3;
+    color: #fff;
+    transition: 1s;
+}
+
+/*blog*/
+.blog {}
