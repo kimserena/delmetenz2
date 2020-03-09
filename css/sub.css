@@ -7,6 +7,7 @@
 }
 */
 
+
 /*sub*/
 p.subs-title {
     margin: 20px 0;
@@ -97,7 +98,116 @@ p.about-info {
 }
 
 .weare-visual .overlay {
-    cursor: default;
+    
+}
+
+/*오버레이효과*/
+.about-container {
+    position: relative;
+    width: 33%;
+    display: inline-block;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about-overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(204, 52, 68, 0.8);
+    cursor: pointer;
+}
+.about-overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 210, 45, 0.8);
+    cursor: pointer;
+}
+.about-overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(125, 190, 75, 0.8);
+    cursor: pointer;
+}
+
+.about-container:hover .about-overlay1 {
+    opacity: 1;
+}
+.about-container:hover .about-overlay2 {
+    opacity: 1;
+}
+.about-container:hover .about-overlay3 {
+    opacity: 1;
+}
+
+.about-text1 {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #222;
+    padding: 5px;
+    border-radius: 5px;
+    font-size:13px;
+}
+.about-text2 {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #222;
+    padding: 5px;
+    border-radius: 5px;
+    font-size:13px;
+}
+.about-text3 {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #222;
+    padding: 5px;
+    border-radius: 5px;
+    font-size:13px;
 }
 
 .one_third {
@@ -171,6 +281,67 @@ ul.tabs li.current {
 }
 
 /*#more {display: none;}*/
+
+
+.xtalk-overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 1);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+html, body{
+  height: 100%;
+  overflow: auto;
+}
+
+.xtalk-overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  overflow: scroll;
+  height: 100%;
+}
+
+.xtalk-overlay-content img{width: 300px;}
+
+.xtalk-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.xtalk-overlay a:hover, .xtalk-overlay a:focus {
+  color: #f1f1f1;
+}
+
+.xtalk-overlay .xtalk-closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .xtalk-overlay {overflow-y: auto;}
+  .xtalk-overlay a {font-size: 20px}
+  .xtalk-overlay .xtalk-closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
 
 /*request*/
 .requestbg {

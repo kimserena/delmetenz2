@@ -69,3 +69,14 @@ function loadfunction() {
     moreText.style.display = "inline";
   }
 }
+
+//work모달
+function openXtalk() {
+  document.getElementById("workXtalk").style.height = "100%";
+    document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+}
+
+function closeXtalk() {
+  document.getElementById("workXtalk").style.height = "0%";
+    document.getElementsByTagName('body')[0].style.overflow = 'auto';
+}

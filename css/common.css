@@ -371,7 +371,6 @@ h1.main-title p {
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.8);
-    cursor: pointer;
 }
 
 .container:hover .overlay {
@@ -379,7 +378,7 @@ h1.main-title p {
 }
 
 .text {
-    color: white;
+    color: #fff;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -388,12 +387,16 @@ h1.main-title p {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    background: #0140D3;
+    padding: 5px;
+    border-radius: 5px;
+    font-size:13px;
 }
 
 /*contact*/
 .contact {
     height: 300px;
-    background: url("../img/pc-1207886.jpg") no-repeat center;
+    background: url("../img/pc-1207886.jpg") no-repeat top;
     background-size: auto;
 }
 
@@ -414,17 +417,18 @@ h1.main-title p {
 
 /*footer*/
 footer {
-    border-top: 1px solid #999;
+    background: #2D3032;
+    border-top: 1px solid #555;
     position: relative;
     background: #2D3032''
 }
 
 .footer-brand-desktop {
-    display: inline-block;
-    width: 10%;
+    display: block;
+    width: 15%;
     vertical-align: top;
     margin-top: 30px;
-    margin-left: 10%;
+    /*    margin-left: 10%;*/
 }
 
 .logo-image-footer {
@@ -434,21 +438,78 @@ footer {
     width: 100%;
 }
 
-.copyright {
-    padding: 20px 5%;
+.footer-contact {
+    padding: 20px 0;
     display: inline-block;
+    width: 35%;
 }
 
-.copyright span {
-    margin: 5px 15px;
+.footer-contact p span b {
+    color: #777;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-contact span {
+    margin: 5px 5px;
     display: inline-block;
+    color: #afafaf;
+    font-size: 12px;
+}
+
+.news {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 0;
+    width: 32%;
+}
+
+.news tr {
+    border-bottom: 1px solid #444;
+    padding: 3px 0;
+    display: block;
+}
+
+.kboard-list-title {
+    display: block;
+}
+
+.kboard-list-date {}
+
+.news p span {
+    color: #777;
+    letter-spacing: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.news td {
+    color: #999;
+    font-size: 11px;
+}
+
+.news td a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.copyright {
+    padding: 20px 0;
+    background: #222;
+}
+
+.copyright p span {
+    color: #777;
+    font-size: 13px;
 }
 
 /*탑버튼*/
 .top {
     position: absolute;
     bottom: 0px;
-    right: 10%;
+    right: 8%;
 }
 
 #myBtn {
@@ -458,7 +519,6 @@ footer {
     cursor: pointer;
     padding: 5px 10px;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 1px 3px 0px #ddd;
     opacity: 1;
 }
 
